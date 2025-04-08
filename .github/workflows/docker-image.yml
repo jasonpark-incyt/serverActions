@@ -21,6 +21,6 @@ jobs:
     - name: Build the Docker image
       run: >
         docker buildx build . 
-        --file Dockerfile
+        --file DockerFile
         --build-arg PROJECT_VERSION="$PROJECT_VERSION"
         --tag miguno/golang-docker-build-tutorial:$(date +%s)
