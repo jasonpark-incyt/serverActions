@@ -22,10 +22,3 @@ jobs:
         docker build -t my-go-app .
         go test ./...
 
-    - name: Publish Docker image
-      if: success()
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        push: true
-        tags: my-go-app:latest

@@ -23,4 +23,6 @@ jobs:
         docker buildx build . 
         --file DockerFile
         --build-arg PROJECT_VERSION="$PROJECT_VERSION"
-        --tag miguno/golang-docker-build-tutorial:$(date +%s)
+        --tag jasonpark-incyt/golang-docker-build-tutorial:$(date +%s)
+
+        
