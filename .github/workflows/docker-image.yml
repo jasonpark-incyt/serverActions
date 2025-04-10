@@ -21,8 +21,6 @@ jobs:
     - name: Build the Docker image
       run: >
         docker buildx build . 
-        --file DockerFile
+        --file Dockerfile
         --build-arg PROJECT_VERSION="$PROJECT_VERSION"
         --tag jasonpark-incyt/golang-docker-build-tutorial:$(date +%s)
-
-        
