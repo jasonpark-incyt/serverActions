@@ -1,5 +1,5 @@
 # Build stage
-FROM golang:1.20-alpine3.17 AS build
+FROM golang:1.23-alpine3.17 AS build
 WORKDIR /app
 COPY . .
 RUN go mod download
