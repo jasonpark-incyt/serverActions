@@ -13,5 +13,5 @@ func main() {
 	http.HandleFunc("/", handler)
 	fmt.Println("Server started on port 8080")
 	http.ListenAndServe(":8080", nil)
-	fmt.Println("yah!")
+	fmt.Println("yahh!!")
 }
