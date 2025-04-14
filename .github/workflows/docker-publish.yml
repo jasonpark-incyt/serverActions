@@ -87,7 +87,7 @@ jobs:
         uses: actions/attest-build-provenance@v2
         with:
           subject-name: 'github.com/jasonpark-incyt/serverActions'
-          subject-digest: ${{ steps.push.outputs.digest }} 
+          subject-digest: ${{ steps.build-and-push.outputs.digest }} 
           push-to-registry: true
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
